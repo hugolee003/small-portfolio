@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="/dist/output.css" rel="stylesheet"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> -->
+    <title>Amb. Anointing</title>
+</head>
+<body class="font-nunito">
+    <!-- Menu section -->
+    <div class="h-screen bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-900 relative overflow-hidden">
+        <!-- Navbar -->
+        <nav class="w-full fixed top-0 bg-white dark:bg-slate-900 z-10 shadow-sm">
+            <div class="container mx-auto py-5 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <!-- <img class="w-20 h-12" src="../src/images/image1-removebg-preview.png" alt=""> -->
+                    <span class="text-2xl font-bold dark:text-white text-indigo-900">Amb. Anointing</span>
+                </div>
+                <ul class="hidden md:flex space-x-10 text-gray-600 dark:text-gray-100 font-bold text-sm uppercase">                  
+                    <li class="hover:text-gray-500">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#about">About me</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#services">Services</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#works">Works</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#contact">Contact</a>
+                    </li>                    
+                </ul>
+                <svg id="moon" class="w-6 h-6 cursor-pointer hidden md:block dark:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                <svg id="hamburger" class="w-6 h-6 md:hidden cursor-pointer z-20" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+            </div>     
+            <ul id="menu" class="hidden bg-indigo-900 absolute left-0 top-0 text-white space-y-10 w-full rounded-b-3xl p-10 text-center">              
+                <li class="hover:text-gray-500">
+                    <a id="hLink" href="#">Home</a>
+                </li>
+                <li class="hover:text-gray-500">
+                    <a id="hLink" href="#about">About me</a>
+                </li>
+                <li class="hover:text-gray-500">
+                    <a id="hLink" href="#services">Services</a>
+                </li>
+                <li class="hover:text-gray-500">
+                    <a id="hLink" href="#works">Works</a>
+                </li>
+                <li class="hover:text-gray-500">
+                    <a id="hLink" href="#contact">Contact</a>
+                </li>
+            </ul>      
+        </nav>
+        <!-- Intro content -->
+        <!-- image -->
+        <img class="absolute bottom-0 right-0 lg:left-0 mx-auto h-5/6 object-cover" src="./images/image2__2_-removebg-preview.png" alt="Amb. Anointing">
+        <!-- circle -->
+        <div class="hidden lg:block absolute -bottom-1/2 right-0 left-0 mx-auto w-big h-big bg-indigo-900 rounded-full -z-10"></div>
+        <!-- Animated text -->
+        <div class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-3xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold">
+            <span class="text-gray-600 dark:text-white">Online</span>
+            <p class="text-red-500 dark:text-indigo-500">Marketer</p>
+        </div>
+        <!-- Texts -->
+        <div class="hidden lg:flex flex-col gap-5 rounded-md shadow-lg shadow-indigo-400 absolute top-0 bottom-0 m-auto right-10 bg-white dark:shadow-slate-700 dark:shadow-md dark:bg-slate-900 p-6 h-fit w-1/3 ">
+            <h1 class="text-2xl font-bold text-indigo-700 font-dm">Hi, I'm Amb. Anointing 👋</h1>
+            <p class="text-gray-600 dark:text-gray-300">I am a <span id="text"></span>  with a track record of results - having made my first six figures from WhatsApp alone</p>
+
+            <a class="bg-indigo-600 px-3 text-m py-2 rounded-md w-fit text-white font-bold hover:bg-indigo-700" href="#contact">Hire Me</a>            
+        </div>     
+    </div>
+
+    <!-- About section -->  
+    <div id="about" class="px-10 dark:bg-slate-900">
+    <div
+      class="container mx-auto py-40 flex flex-col-reverse lg:flex-row items-center gap-20">
+      <!-- left -->
+      <div class="relative">
+        <img
+          class="h-1/4 absolute top-0 left-0 -z-10"
+          src="./img/dots.png" alt=""/>
+        <div class="h-full rounded-full overflow-hidden">
+          <img src="./images/image1 (2).jpeg" alt="" />
+        </div>
+      </div>
+      <!-- right -->
+      <div class="my-auto flex flex-col gap-3">
+        <h1 class="text-indigo-600 font-bold">ABOUT ME</h1>
+        <h1 class="text-3xl font-medium text-gray-700 dark:text-white">Founder, Money Hack Series</h1>
+        <h1 class="text-3xl font-medium text-gray-700 dark:text-white">
+          CEO, Sales Value College(SVC)
+        </h1>
+        <p class="text-gray-400">
+           I have helped several entrepreneurs and brands to thrive in the business world and empowered many others with certain high income digital skills that has helped put food on their table and made regular credit alerts their ringtones through my programs.
+        </p>
+        <h2 class="text-gray-400 font-medium">Impact Digi-Conference</h2>
+        <div class="w-full bg-gray-200 h-1.5 rounded-md">
+          <div class="w-full bg-indigo-600 h-1.5 rounded-md"></div>
+        </div>
+        <h2 class="text-gray-400 font-medium">Sales Value Community Global</h2>
+        <div class="w-full bg-gray-200 h-1.5 rounded-md">
+          <div class="w-full bg-indigo-600 h-1.5 rounded-md"></div>
+        </div>
+        <h2 class="text-gray-400 font-medium">Business Talk Series</h2>
+        <div class="w-full bg-gray-200 h-1.5 rounded-md">
+          <div class="w-full bg-indigo-600 h-1.5 rounded-md"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- services -->
+  <div id="services" class="dark:bg-slate-900">
+    <div class="container mx-auto">
+      <!-- top -->
+      <div class="flex flex-col gap-3 items-center">
+        <h1 class="text-indigo-600 font-bold">SERVICES</h1>
+        <h1 class="text-3xl text-gray-700 dark:text-white">What do I offer?</h1>
+        <p class="w-1/2 text-center text-gray-400">
+         I offer services such as the sale of digital products which help businessesto predictably grow their sales by at least 10 times their present income. I also host free digital trainings from time to time geared towards empowering youths and entrepreneurs with high income skills which they need to acquire and scale, alleviating poverty by doing so.
+        </p>
+      </div>
+      <!-- bottom -->
+      <div class="p-5 sm:p-0 flex flex-wrap justify-between">
+        <!-- card -->
+        <div
+          class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3"
+        >
+          <img class="w-10" src="./img/icon.png" alt="" />
+          <h1 class="font-medium text-lg dark:text-white">SVC (Sales Value College)</h1>
+          <p class="text-gray-400">
+            This is a forum where teachings are carried out on a weekly and monthly basis for free.The teachings are cut across Business, Marketing and Sales.    
+          </p>
+          <a class="text-indigo-600 font-semibold text-sm" href="https://wa.link/b0ovxe" target="_blank"
+            >Read More</a
+          >
+        </div>
+        <!-- card -->
+        <div
+          class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3"
+        >
+          <img class="w-10" src="./img/icon.png" alt="" />
+          <h1 class="font-medium text-lg dark:text-white">Impact Digi-Conference</h1>
+          <p class="text-gray-400">
+            This is a yearly digital conference that is aimed at equipping youth and business owners with adequate knowledge on Influence, Impact and Income.    
+          </p>
+          <a class="text-indigo-600 font-semibold text-sm" href="https://wa.link/b0ovxe" target="_blank"
+            >Read More</a
+          >
+        </div>
+        <!-- card -->
+        <div
+          class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3"
+        >
+          <img class="w-10" src="./img/icon.png" alt="" />
+          <h1 class="font-medium text-lg dark:text-white">Business Talk Series</h1>
+          <p class="text-gray-400">
+            This is a platform where I share my business experiences, marketing and sales psychology on a daily and weekly basis on my WhatsApp Status.  
+          </p>
+          <a class="text-indigo-600 font-semibold text-sm" href="https://wa.link/b0ovxe" target="_blank"
+            >Read More</a
+          >
+        </div>        
+      </div>
+    </div>
+  </div>
+
+   <!-- works -->
+   <div id="works" class="py-40 dark:bg-slate-900">
+    <div class="container mx-auto">
+      <!-- top -->
+      <div class="flex flex-col gap-3 items-center">
+        <h1 class="text-indigo-600 font-bold">PORTFOLIO</h1>
+        <h1 class="text-3xl dark:text-white">Works & Projects</h1>
+        <p class="w-1/2 text-center text-gray-400">
+          Below are some of the testi-MONEYs (as i love to call it) from my students and clients with respect to Sales and Money generated from the skills, strategies and principles I teach.
+        </p>
+      </div>
+      <!-- bottom -->
+      <div class="p-5 sm:p-0 flex flex-wrap justify-between">
+        <!-- card -->
+        <div
+          class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+        >
+          <img src="./images/PHOTO-2022-09-20-20-59-30.jpg" />
+        </div>
+        <!-- card -->
+        <div
+          class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+        >
+          <img src="./images/PHOTO-2022-09-20-21-00-17.jpg" />
+        </div>
+        <!-- card -->
+        <div
+          class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+        >
+          <img class="h-1/2 w-full" src="./images/PHOTO-2022-09-20-21-04-37.jpg" />
+        </div>                   
+      </div>
+    </div>
+  </div>
+
+      <!-- contact -->
+      <div id="contact" class="dark:bg-slate-900">
+        <div class="container mx-auto">
+          <!-- top -->
+          <div class="flex flex-col gap-3 items-center">
+            <h1 class="text-indigo-600 font-bold">CONTACT</h1>
+            <h1 class="text-3xl dark:text-white">Have a Question?</h1>
+            <p class="w-1/2 text-center text-gray-400">
+              Do you have an idea? Let's discuss it and see what we can do
+              together.
+            </p>
+          </div>
+          <!-- bottom -->
+          <form class="mt-5 p-8 flex flex-col gap-5 items-center">
+            <input
+              class="p-2 w-full md:w-1/2 ring-2 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+              type="text"
+              placeholder="Full name"
+            />
+            <input
+              class="p-2 w-full md:w-1/2 ring-2 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+              type="email"
+              placeholder="Email"
+            />
+            <textarea
+              class="p-2 w-full md:w-1/2 ring-2 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+              cols="30"
+              rows="10"
+              placeholder="Message..."
+            ></textarea>
+            <a class="w-1/2 bg-indigo-600 text-white text-center font-medium px-3 py-2 rounded-md cursor-pointer" href="https://wa.link/b0ovxe" target="_blank">Submit</a>         
+          </form>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer class=" font-nunito text-gray-800 body-font dark:bg-slate-900 dark:text-white border-y-2 dark:border-0">
+  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900" href="wa.link/rx4kf5"> 
+      
+      <span class="ml-3 text-xl text-gray-800  dark:bg-slate-900 dark:text-white">Ugochukwu<span class="text-purple-600 text-3xl">.</span></span>
+    </a>
+    <p class="text-sm text-gray-800 dark:bg-slate-900 dark:text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2022 Ugochukwu —
+      <a href="https://twitter.com/hugolee_003" class="text-gray-600 ml-1 dark:bg-slate-900 dark:text-indigo-500" rel="noopener noreferrer" target="_blank">@hugo_lee003</a>
+    </p>
+    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      
+      <a class="ml-3 text-indigo-500" href="https://twitter.com/hugolee_003">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-indigo-500" href="https://www.instagram.com/z3rogravity003/">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+        </svg>
+      </a>
+      
+    </span>
+  </div>
+</footer>
+
+
+<!-- Autotype js -->
+    <script>
+      const hamburger = document.querySelector('#hamburger');
+const menu = document.querySelector('#menu');
+const moon = document.querySelector('#moon');
+const body = document.querySelector('body');
+const hLinks = document.querySelectorAll('#hLink');
+
+hamburger.addEventListener('click', () => {
+   menu.classList.toggle('hidden');
+   hamburger.classList.toggle('text-white');
+});
+
+hLinks.forEach(link =>{
+    link.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        hamburger.classList.toggle('text-white');
+    });
+})
+
+moon.addEventListener('click', () => {
+    body.classList.toggle('dark');
+ });
+ 
+    </script>
+
+
+
+
+
+    <!-- Autotype Js -->
+    <script>
+      var AutoTyping=function(e){var t={};function r(n){if(t[n])return t[n].exports;var i=t[n]={i:n,l:!1,exports:{}};return e[n].call(i.exports,i,i.exports,r),i.l=!0,i.exports}return r.m=e,r.c=t,r.d=function(e,t,n){r.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:n})},r.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},r.t=function(e,t){if(1&t&&(e=r(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var n=Object.create(null);if(r.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var i in e)r.d(n,i,function(t){return e[t]}.bind(null,i));return n},r.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return r.d(t,"a",t),t},r.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},r.p="",r(r.s=0)}([function(e,t,r){"use strict";r.r(t);t.default=class{constructor(e,t,{typeSpeed:r=150,deleteSpeed:n=150,waitBeforeDelete:i=1e3,waitBetweenWords:o=1e3,writeWhole:l=!1}={}){this.selector=e,this.text=t,this.typeSpeed=r,this.deleteSpeed=n,this.waitBeforeDelete=i,this.waitBetweenWords=o,this.writeWhole=l,this.el=document.querySelector(e)}async start(){this.el;for(let e=0;e<this.text.length;e++){const t=this.text[e];let r=t.split("");this.writeWhole&&(r=[t]),await this.writeText(r),e==this.text.length-1&&(e=-1)}}writeText(e){let t=this;return new Promise(r=>{const n=this.el;let i=!1,o=setInterval(()=>{let l=e.shift();i&&(i=!1,l=" "+l),i=" "==l,n.innerText+=l,0==e.length&&(clearInterval(o),setTimeout(()=>{let e=setInterval(()=>{const i=n.innerText;t.writeWhole?n.innerText="":n.innerText=i.substr(0,i.length-1),0==n.innerText.length&&(clearInterval(e),setTimeout(()=>r(),this.waitBetweenWords))},this.deleteSpeed)},this.waitBeforeDelete))},this.typeSpeed)})}}}]).default;
+
+
+      const exampleText = ['High Ticket Closer', 'Digital Skills Trainer',];
+          const exampleTyping = new AutoTyping('#text', exampleText, {
+              typeSpeed: 100,
+              deleteSpeed: 100,
+              waitBeforeDelete: 2000,
+              waitBetweenWords: 500,
+          });
+          exampleTyping.start()
+        </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+ 
